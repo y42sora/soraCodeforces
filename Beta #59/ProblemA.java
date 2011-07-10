@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class ProblemA {
@@ -20,44 +17,20 @@ public class ProblemA {
 			s[i][1] = sc.next();
 		}
 		
-		ArrayList<String> ar;
-		
-		ar = new ArrayList<String>();
 		for(int i=0; i<n; i++)
 			if(s[i][1].equals("rat"))
-				ar.add(s[i][0]);
-		//Collections.sort(ar);
-		for(int i=0; i<ar.size(); i++){
-			System.out.println(ar.get(i));
-		}
+				System.out.println(s[i][0]);
 		
-		ar = new ArrayList<String>();
 		for(int i=0; i<n; i++)
 			if(s[i][1].equals("woman") || s[i][1].equals("child"))
-				ar.add(s[i][0]);
-		//Collections.sort(ar);
-		for(int i=0; i<ar.size(); i++){
-			System.out.println(ar.get(i));
-		}
+				System.out.println(s[i][0]);
 		
-		ar = new ArrayList<String>();
-		for(int i=0; i<n; i++){
+		for(int i=0; i<n; i++)
 			if(s[i][1].equals("man"))
-				ar.add(s[i][0]);
-		}
-		//Collections.sort(ar);
-		for(int i=0; i<ar.size(); i++){
-			System.out.println(ar.get(i));
-		}
+				System.out.println(s[i][0]);
 		
-		ar = new ArrayList<String>();
-		for(int i=0; i<n; i++){
+		for(int i=0; i<n; i++)
 			if(s[i][1].equals("captain"))
-				ar.add(s[i][0]);
-		}
-		//Collections.sort(ar);
-		for(int i=0; i<ar.size(); i++){
-			System.out.println(ar.get(i));
-		}
+				System.out.println(s[i][0]);
 	}
 }
